@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingWorker;
 
@@ -49,7 +50,7 @@ public class File_reader extends SwingWorker<List<String>, String> {
     @Override
     protected void done() {
         try {
-            System.out.println("Done.");
+        	JOptionPane.showMessageDialog(null,"Finished reading");
         } catch (Exception ex) {
             ex.printStackTrace();
         }
